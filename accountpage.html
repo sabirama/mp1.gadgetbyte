@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <button id="topBtn" onclick="toTop()" class="btn">
+      <img src="images/icons/to-top.png" alt="to top" class="icon opacity-25" />
+    </button>
+    <!-- Header Nav -->
+    <header class="header mb-5">
+      <div class="d-flex justify-content-between nav">
+        <button class="btn btn-blue">
+          <a href="index.html"
+            ><img src="images/icons/home-icon.png" alt="home" class="icon"
+          /></a>
+        </button>
+        <div class="d-flex justify-content-end">
+          <div class="btn-group" role="group" aria-label="Nav Bar">
+            <button type="button" class="btn">
+              <a href="costumersupport.html" class="text-decoration-none"
+                ><img
+                  src="images/icons/customer-support.png"
+                  alt="support"
+                  class="icon"
+              /></a>
+            </button>
+            <button type="button" class="btn">
+              <a href="" class="text-decoration-none"
+                ><img
+                  src="images/icons/app-download.png"
+                  alt="download"
+                  class="icon"
+              /></a>
+            </button>
+
+            <button type="button" class="btn">
+              <a href="cart.html" class="text-decoration-none"
+                ><img src="images/icons/cart.png" alt="cart" class="icon"
+              /></a>
+            </button>
+          </div>
+
+          <div class="btn-group desktop-nav" role="group" aria-label="Nav Bar">
+            <button type="button" class="btn">
+              <a href="shoppingpage.html" class="text-decoration-none">
+                Shop
+              </a>
+            </button>
+
+            <button type="button" class="btn">
+              <a href="logInSignUp.html" class="text-decoration-none">
+                Log-in / Sign-Up
+              </a>
+            </button>
+          </div>
+
+          <a href="accountpage.html" class="text-decoration-none pt-2 px-2"
+            ><img
+              src="images/icons/account-icon.png"
+              alt="account"
+              class="icon"
+            />
+          </a>
+
+          <!-- dropdown nav -->
+          <div class="dropdown phone-nav">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="images/icons/nav-icon.png" alt="nav" class="icon" />
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="shoppingpage.html">Shop</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Track Orders</a></li>
+              <li>
+                <a class="dropdown-item" href="logInSignUp.html"
+                  >Log-in / Sign-Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div class="container row align-items-center mx-auto m-3 pb-1 bg-div">
+        <div
+          class="col-12 col-md-4 logo-container justify-content-center d-flex"
+        >
+          <a href="index.html"
+            ><img src="images/brand-logo.png" alt="logo" id="brand-logo"
+          /></a>
+        </div>
+        <div class="col-12 col-md-7 searchbar-container">
+          <div class="main-search-bar d-flex">
+            <input
+              class="form-control form-control-lg"
+              type="text"
+              placeholder="Search"
+              aria-label=".form-control"
+              id="main-search-bar"
+            />
+            <a
+              href="shoppingpage.html"
+              class="text-decoration-none align-self-center"
+              ><img
+                src="images/icons/search-icon.png"
+                alt="search"
+                class="icon mx-3"
+            /></a>
+          </div>
+
+          <!-- Search Filter -->
+          <div class="accordion" id="filterAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed filter-accordion"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#filtermain1"
+                  aria-expanded="false"
+                  aria-controls="filtermain1"
+                >
+                  Filter
+                </button>
+              </h2>
+              <div id="filtermain1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="row d-flex justify-content-center">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button filter-accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#filtercat1"
+                          aria-expanded="true"
+                          aria-controls="filtercat1"
+                        >
+                          Phones
+                        </button>
+                      </h2>
+                      <div
+                        id="filtercat1"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <div>
+                            <input type="checkbox" name="phone1" />
+                            <label for="phone1"> Samsung</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phone2" />
+                            <label for="phone2"> Huawei</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phone3" />
+                            <label for="phone3"> Xiaomi</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phone4" />
+                            <label for="phone4"> Lenovo</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phone5" />
+                            <label for="phone5"> Apple</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button filter-accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#filtercat2"
+                          aria-expanded="true"
+                          aria-controls="filtercat2"
+                        >
+                          Laptop
+                        </button>
+                      </h2>
+                      <div
+                        id="filtercat2"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <div>
+                            <input type="checkbox" name="laptop1" />
+                            <label for="laptop1"> Samsung</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="laptop2" />
+                            <label for="laptop2"> MSI</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="laptop3" />
+                            <label for="laptop3"> HP</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="laptop4" />
+                            <label for="laptop4"> Lenovo</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="laptop5" />
+                            <label for="laptop5"> Mac</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button filter-accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#filtercat3"
+                          aria-expanded="true"
+                          aria-controls="filtercat3"
+                        >
+                          Desktop PC
+                        </button>
+                      </h2>
+                      <div
+                        id="filtercat3"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <div>
+                            <input type="checkbox" name="desktop1" />
+                            <label for="desktop1"> Razer</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="desktop1" />
+                            <label for="desktop1"> MSI</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="desktop1" />
+                            <label for="desktop1"> HP</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="desktop1" />
+                            <label for="desktop1"> Lenovo</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="desktop1" />
+                            <label for="desktop1"> Acer</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button filter-accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#filtercat4"
+                          aria-expanded="true"
+                          aria-controls="filtercat4"
+                        >
+                          Phone Accessories
+                        </button>
+                      </h2>
+                      <div
+                        id="filtercat4"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <div>
+                            <input type="checkbox" name="phoneAccessories1" />
+                            <label for="phoneAccessories1">Phone Cable</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phoneAccessories2" />
+                            <label for="phoneAccessories2">Charger</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phoneAccessories3" />
+                            <label for="phoneAccessories3">Powerbanks</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phoneAccessories4" />
+                            <label for="phoneAccessories4">Phone Case</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="phoneAccessories5" />
+                            <label for="phoneAccessories5">Earphones</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button filter-accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#filtercat5"
+                          aria-expanded="true"
+                          aria-controls="filtercat5"
+                        >
+                          Laptop and PC Accessories
+                        </button>
+                      </h2>
+                      <div
+                        id="filtercat5"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <div>
+                            <input type="checkbox" name="pcAccessories1" />
+                            <label for="pcAccessories1">PC camera</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="pcAccessories2" />
+                            <label for="pcAccessories2">Ram</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="pcAccessories3" />
+                            <label for="pcAccessories3">Power supply</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="pcAccessories4" />
+                            <label for="pcAccessories4">Processor</label>
+                          </div>
+                          <div>
+                            <input type="checkbox" name="pcAccessories5" />
+                            <label for="pcAccessories5">Graphics card</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button filter-accordion"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#filtercat6"
+                          aria-expanded="true"
+                          aria-controls="filtercat6"
+                        >
+                          Others
+                        </button>
+                      </h2>
+                      <div
+                        id="filtercat6"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <div class="d-flex w-100">
+                            <small class="w-100">Price: PHP 0</small>
+                            <input
+                              id="multi"
+                              class="multi-range w-100"
+                              type="range"
+                            />
+                            <small class="w-100">PHP 10,000</small>
+                          </div>
+                          <div>
+                            <input
+                              type="checkbox"
+                              id="cod-filter"
+                              class="mx-2"
+                            />
+                            <label for="cod-filter">Cash on Delivery</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="col-xs-12 col-md-8 m-auto bg-div mb-5">
+        <div class="container">
+          <h4 class="px-3 pt-5">
+            Account Name
+            <span>
+                <input
+                  type="button"
+                  value="edit"
+                  class="btn-grey" />
+  
+            <hr>
+          </span>
+            <div class="px-3">
+              <p class="px-3 pt-3">Full Name: FirstName LastName <span
+                  ><input type="button" value="edit" class="btn-grey"
+                /></span><hr></p>
+              <p class="px-3 pt-3">
+                Email: mail@gmail.com
+                <span
+                  ><input type="button" value="edit" class="btn-grey"
+                /></span>
+                <hr>
+              </p>
+              <p class="px-3 pt-3">
+                Mobile Number: +0000000
+                <span
+                  ><input type="button" value="edit" class="btn-grey"
+                /></span>
+              </p>
+            </div>
+            <hr />
+          </h4>
+          <h4 class="px-3 pt-3">Ongoing Orders</h4>
+          <div class="row">
+            <div class="col-12 px-5">
+              Order Item 1 name
+              <img src="images/icons/promo.png" alt="" class="icon" />
+              <span>| Arrival date |</span>
+              <span>Item Details</span>
+            </div>
+
+            <div class="col-12 px-5">
+              Order Item 2 name
+              <img src="images/icons/promo.png" alt="" class="icon" />
+              <span>| Arrival date |</span>
+              <span>Item Details</span>
+            </div>
+          </div>
+          <hr />
+          <h4 class="px-3 pt-3">Shipping Address</h4>
+          <div class="row">
+            <div class="col-12 px-5 py-2">
+              Address 1: Bldg No. Street, City, Region <span>+0000000</span><span class="px-2"><input type="button" value="remove" class="btn-grey"></span>
+            </div>
+            <div class="col-12 px-5 py-2">
+              Address 2: Bldg No. Street, City, Region <span>+0000000</span><span class="px-2"><input type="button" value="remove" class="btn-grey"></span>
+            </div>
+            <div class="col-12 px-5 py-2"><span class="px-2"><input type="button" value="Add Shipping Address" class="btn-grey"></span></div>
+            <hr />
+          </div>
+          <h4 class="px-3 pt-3">Order History</h4>
+          <div class="row">
+            <div class="col-12 px-5">
+              Order Item 1 name
+              <img src="images/icons/promo.png" alt="" class="icon" />
+              <span>| Arrival date |</span>
+              <span>Item Details</span>
+            </div>
+
+            <div class="col-12 px-5">
+              Order Item 2 name
+              <img src="images/icons/promo.png" alt="" class="icon" />
+              <span>| Arrival date |</span>
+              <span>Item Details</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex flex-column">
+      <hr />
+      <section class="container row pt-2 m-auto">
+        <div class="col-12 col-sm-3">
+          <h5>Contacts</h5>
+          <div>
+            Smart:
+            <a href="tel:+" class="text-decoration-none text-darkblue"
+              >+00000000</a
+            >
+          </div>
+          <div>
+            Globe:
+            <a href="tel:+" class="text-decoration-none text-darkblue"
+              >+00000001</a
+            >
+          </div>
+          <div>
+            Tel:
+            <a href="tel:+" class="text-decoration-none text-darkblue"
+              >+00000002</a
+            >
+          </div>
+          <div>
+            <a href="#" class="text-decoration-none text-darkblue">Location</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <h5>Support</h5>
+          <a href="" class="d-block text-decoration-none text-darkblue"
+            >About</a
+          >
+          <a href="" class="d-block text-decoration-none text-darkblue"
+            >Privacy Policy</a
+          >
+          <a href="" class="d-block text-decoration-none text-darkblue"
+            >Security</a
+          >
+          <a href="" class="d-block text-decoration-none text-darkblue"
+            >Track Order</a
+          >
+          <a href="" class="d-block text-decoration-none text-darkblue"
+            >Return Policy</a
+          >
+        </div>
+        <div class="col-12 col-sm-3 flex-column">
+          Follow Us on:
+          <ul class="footer-icons">
+            <li>
+              <img
+                src="images/icons/fb-icon.png"
+                alt="facebook"
+                class="icon m-auto footer-icon-img"
+              />
+            </li>
+            <li>
+              <img
+                src="images/icons/insta-icon.png"
+                alt="instagram"
+                class="icon m-auto footer-icon-img"
+              />
+            </li>
+            <li>
+              <img
+                src="images/icons/X-icon.png"
+                alt="X corp"
+                class="icon m-auto footer-icon-img"
+              />
+            </li>
+            <li>
+              <img
+                src="images/icons/youtube-icon.png"
+                alt="youtube"
+                class="icon m-auto footer-icon-img"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-3 mx-auto mb-auto d-flex flex-column">
+          <small>Do you want to be updated on new items and promo sales? You may
+            want to:</small>
+          <button type="button" class="btn-darkblue border-shadow-hover btn-lg mx-auto mt-2 notif-button">
+            <small> Turn On Notifications</small>
+          </button>
+        </div>
+      </section>
+      <hr />
+      <span class="m-auto text-darkblue mb-3">
+        &copy; Gadget Byte 2023. All Rights Reserved.</span
+      >
+    </footer>
+  </body>
+</html>
