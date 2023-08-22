@@ -138,14 +138,14 @@ footer {
 .footer-icons {
   list-style: none;
   column-count: 2;
-  width: 120px;
+  width: 100px;
   padding-left: 0;
 }
 .footer-icons li {
   margin: 0.25rem;
 }
 .footer-icon-img {
-  height: 3rem;
+  height: 2rem;
 }
 .notif-button {
   min-width: 120px;
