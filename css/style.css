@@ -5,11 +5,6 @@
 }
 body {
   min-width: 300px;
-  background: linear-gradient(
-    63deg,
-    rgba(0, 74, 170, 1) 0%,
-    rgba(33, 31, 31, 1) 100%
-  );
 }
 
 #topBtn {
@@ -43,6 +38,10 @@ body {
 
 .accordion-item {
   z-index: 2;
+}
+
+.search-section {
+  margin-top: 100px;
 }
 
 #brand-logo {
@@ -177,7 +176,7 @@ footer {
   border-radius: 0.5rem;
 }
 .btn-darkgrey:hover {
-  background-color: #c0c0c0;
+  background-color: #191970;
 }
 .btn-darkblue {
   background-color: #191970;
@@ -198,6 +197,12 @@ footer {
 .border-shadow-hover:hover {
   box-shadow: 5px 5px 10px grey, 10px 10px 20px black;
 }
+.text-green {
+  color: yellowgreen;
+}
+.text-lightblue {
+  color: aqua;
+}
 .text-darkblue {
   color: #191970;
 }
@@ -212,7 +217,7 @@ footer {
   );
   background-color: none;
   padding: 2rem;
-  border-radius: 25px;
+  border-radius: 5px;
   box-shadow: 5px 5px 10px #c0c0c0, 10px 10px 20px #36454f;
 }
 .bg-blue {
