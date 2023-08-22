@@ -274,6 +274,10 @@ footer {
     padding: 2rem;
   }
 
+  .nav button {
+    padding: 0 1rem;
+  }
+
   .phone-nav {
     display: none;
   }
