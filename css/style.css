@@ -147,6 +147,11 @@ footer {
 .footer-icon-img {
   height: 2rem;
 }
+.footer-icon-img:hover {
+  background-color: #36454f;
+  border-radius: 100%;
+}
+
 .notif-button {
   min-width: 120px;
 }
