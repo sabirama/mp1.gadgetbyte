@@ -17,19 +17,21 @@ body {
   color: #191970;
   border: 2px solid #191970;
   border-radius: 25px;
-  padding: 0.25rem;
-  padding-bottom: 0.5rem;
+  padding: 1rem;
 }
 
 .nav {
   background-color: #c0c0c0;
-  padding: 1.25rem 1rem;
+  padding: 0.5rem;
   position: fixed;
   margin: auto;
   width: 100%;
   max-width: 1920px;
   top: 0;
   z-index: 1;
+}
+.nav button {
+  padding: 0 0.2rem;
 }
 
 .desktop-nav {
@@ -268,12 +270,20 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .nav {
+    padding: 2rem;
+  }
+
   .phone-nav {
     display: none;
   }
 
   .desktop-nav {
     display: flex;
+  }
+
+  .search-section {
+    margin-top: 145px;
   }
 
   .item-description {
