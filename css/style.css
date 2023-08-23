@@ -224,8 +224,8 @@ footer {
 .text-charcoal {
   color: #36454f;
 }
-.text-enlarge:hover {
-  font-size: 120%;
+.text-change:hover {
+  font-style: italic;
 }
 .bg-div {
   background: radial-gradient(
