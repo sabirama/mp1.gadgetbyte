@@ -28,7 +28,7 @@ main {
 }
 
 .icon {
-  height: 2rem;
+  height: 1.2rem;
 }
 
 .nav {
@@ -43,13 +43,15 @@ main {
 }
 
 .nav button {
+  margin: auto;
   padding: 0 0.2rem;
 }
 
 .nav-button {
   display: flex;
+  margin: 0.1rem 0.22rem;
   padding: 0.25rem 0.5rem;
-  margin: auto 0.25rem;
+
   border-radius: 0.8rem;
   height: 3rem;
   align-items: center;
@@ -71,9 +73,8 @@ main {
 
 #account-button {
   border-radius: 100%;
-  width: 4rem;
-  height: 4rem;
-  margin: auto;
+  width: 3.2rem;
+  height: 3.2rem;
 }
 
 #account-button img {
@@ -347,13 +348,21 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+  }
+
   .nav {
     padding: 1rem;
     padding-right: 2rem;
   }
 
-  .nav button {
-    padding: 0 1rem;
+  .nav-button {
+    justify-content: center;
+    padding: 0.25rem 1rem;
+    margin: auto 0.5rem;
   }
 
   .phone-nav {
@@ -362,6 +371,11 @@ footer {
 
   .desktop-nav {
     display: flex;
+  }
+
+  #accout-button {
+    margin: auto;
+    padding: 0;
   }
 
   .search-section {
