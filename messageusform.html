@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Us</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Header Nav -->
+    <header class="header mb-5">
+      <div class="d-flex justify-content-between nav bg-div">
+        <button class="no-border">
+          <a href="index.html" class="nav-button"
+            ><img src="images/icons/home-icon.png" alt="home" class="icon"
+          /></a>
+        </button>
+        <div class="d-flex justify-content-end">
+          <div class="btn-group" role="group" aria-label="Nav Bar">
+            <a href="messageusform.html" class="nav-button"
+              ><img
+                src="images/icons/customer-support.png"
+                alt="support"
+                class="icon"
+            /></a>
+            <a href="" class="nav-button"
+              ><img
+                src="images/icons/app-download.png"
+                alt="download"
+                class="icon"
+            /></a>
+
+            <a href="cart.html" class="nav-button"
+              ><img src="images/icons/cart.png" alt="cart" class="icon"
+            /></a>
+          </div>
+
+          <!-- desktop nav -->
+          <div class="btn-group desktop-nav" role="group" aria-label="Nav Bar">
+            <a href="shoppingpage.html" class="text-decoration-none nav-button">
+              Shop
+            </a>
+
+            <a href="logInSignUp.html" class="text-decoration-none nav-button">
+              Log-Out
+            </a>
+          </div>
+
+          <a href="accountpage.html" class="nav-button" id="account-button"
+            ><img
+              src="images/icons/account-icon.png"
+              alt="account"
+              class="icon"
+            />
+          </a>
+
+          <!-- dropdown nav -->
+          <div class="dropdown phone-nav">
+            <a
+              class="btn dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="images/icons/nav-icon.png" alt="nav" class="icon" />
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="shoppingpage.html">Shop</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Track Orders</a></li>
+              <li>
+                <a class="dropdown-item" href="logInSignUp.html"
+                  >Log-in / Sign-Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Message Us -->
+      <div
+        class="container row align-items-center pb-3 pt-3 mx-auto message-section bg-four border-shadow"
+      >
+        <div
+          class="col-xs-12 col-md-4 logo-container justify-content-center d-flex"
+        >
+          <a href="index.html">
+            <img src="images/brand-logo.png" alt="logo" id="brand-logo"
+          /></a>
+        </div>
+        <div class="col-xs-12 col-md-7 message-us-container">
+          <h1 class="text-center"><strong>HELP CENTER</strong></h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="container bg-two m-5 m-auto mb-5 log-in-container active border-shadow"
+        id="log-in"
+      >
+        <h1 class="pb-4">What do you need help with?</h1>
+        <div class="mb-3 d-flex">
+          <input
+            type="text"
+            class="form-control mb-2 transparent"
+            id="nameInput"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="mb-3 d-flex">
+          <textarea
+            name="helptext"
+            id="helptext"
+            cols="30"
+            rows="10"
+            class="resize-none"
+            placeholder="Your Concerns"
+          ></textarea>
+        </div>
+
+        <div class="d-flex">
+          <a
+            type="button"
+            class="btn-darkgrey border-shadow-hover text-center text-decoration-none mt-4 mb-2 mx-auto py-3 col-12 col-md-5"
+            href="index.html"
+          >
+            Send Message
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="d-flex flex-column">
+      <hr />
+      <section class="container row pt-2 m-auto">
+        <div class="col-12 col-sm-3 mt-3">
+          <h5>Contacts</h5>
+          <div>
+            Smart:
+            <a
+              href="tel:+"
+              class="text-decoration-none text-darkblue quick-links"
+              >+00000000</a
+            >
+          </div>
+          <div>
+            Globe:
+            <a
+              href="tel:+"
+              class="text-decoration-none text-darkblue quick-links"
+              >+00000001</a
+            >
+          </div>
+          <div>
+            Tel:
+            <a
+              href="tel:+"
+              class="text-decoration-none text-darkblue quick-links"
+              >+00000002</a
+            >
+          </div>
+          <div>
+            <a href="#" class="text-decoration-none text-darkblue quick-links"
+              >Philippines</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-3 mt-3">
+          <h5>Quick links</h5>
+          <a
+            href="about.html#about"
+            class="d-block text-decoration-none text-darkblue quick-links"
+            >About</a
+          >
+          <a
+            href="about.html#privacypolicy"
+            class="d-block text-decoration-none text-darkblue quick-links"
+            >Privacy Policy</a
+          >
+          <a
+            href=""
+            class="d-block text-decoration-none text-darkblue quick-links"
+            >Track Order</a
+          >
+          <a
+            href="about.html#returnpolicy"
+            class="d-block text-decoration-none text-darkblue quick-links"
+            >Return Policy</a
+          >
+        </div>
+        <div class="col-12 col-sm-3 flex-column mt-3">
+          Follow Us on:
+          <ul class="footer-icons">
+            <li>
+              <a href=""
+                ><img
+                  src="images/icons/fb-icon.png"
+                  alt="facebook"
+                  class="icon m-auto footer-icon-img"
+              /></a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/icons/insta-icon.png"
+                  alt="instagram"
+                  class="icon m-auto footer-icon-img"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/icons/X-icon.png"
+                  alt="X corp"
+                  class="icon m-auto footer-icon-img mt-1"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="images/icons/youtube-icon.png"
+                  alt="youtube"
+                  class="icon m-auto footer-icon-img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-sm-3 mx-auto mb-auto mt-3 d-flex flex-column">
+          <small
+            >Do you want to be updated on new items and promo sales? You may
+            want to:</small
+          >
+          <a
+            href="logInSignUp.html"
+            type="button"
+            class="border-shadow-hover text-decoration-none btn-lg mx-auto mt-2 btn-darkblue"
+          >
+            Turn On Notifications
+          </a>
+        </div>
+      </section>
+      <hr />
+      <span class="m-auto text-darkblue mb-3">
+        &copy; Gadget Byte 2023. All Rights Reserved.</span
+      >
+    </footer>
+  </body>
+</html>

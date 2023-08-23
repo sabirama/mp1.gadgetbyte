@@ -20,56 +20,44 @@
     ><button id="topBtn" onclick="toTop()" class="btn">top</button>
     <!-- Header Nav -->
     <header class="header mb-5">
-      <div class="d-flex justify-content-between nav">
-        <button class="btn btn-blue">
-          <a href="index.html"
+      <div class="d-flex justify-content-between nav bg-div">
+        <button class="no-border">
+          <a href="index.html" class="nav-button"
             ><img src="images/icons/home-icon.png" alt="home" class="icon"
           /></a>
         </button>
         <div class="d-flex justify-content-end">
           <div class="btn-group" role="group" aria-label="Nav Bar">
-            <button type="button" class="btn">
-              <a href="costumersupport.html" class="text-decoration-none"
-                ><img
-                  src="images/icons/customer-support.png"
-                  alt="support"
-                  class="icon"
-              /></a>
-            </button>
-            <button type="button" class="btn">
-              <a href="" class="text-decoration-none"
-                ><img
-                  src="images/icons/app-download.png"
-                  alt="download"
-                  class="icon"
-              /></a>
-            </button>
+            <a href="messageusform.html" class="nav-button"
+              ><img
+                src="images/icons/customer-support.png"
+                alt="support"
+                class="icon"
+            /></a>
+            <a href="" class="nav-button"
+              ><img
+                src="images/icons/app-download.png"
+                alt="download"
+                class="icon"
+            /></a>
 
-            <button type="button" class="btn">
-              <a href="cart.html" class="text-decoration-none"
-                ><img src="images/icons/cart.png" alt="cart" class="icon"
-              /></a>
-            </button>
+            <a href="cart.html" class="nav-button"
+              ><img src="images/icons/cart.png" alt="cart" class="icon"
+            /></a>
           </div>
 
+          <!-- desktop nav -->
           <div class="btn-group desktop-nav" role="group" aria-label="Nav Bar">
-            <button type="button" class="btn">
-              <a href="shoppingpage.html" class="text-decoration-none">
-                Shop
-              </a>
-            </button>
+            <a href="shoppingpage.html" class="text-decoration-none nav-button">
+              Shop
+            </a>
 
-            <button type="button" class="btn">
-              <a href="logInSignUp.html" class="text-decoration-none">
-                Log-Out
-              </a>
-            </button>
+            <a href="logInSignUp.html" class="text-decoration-none nav-button">
+              Log-Out
+            </a>
           </div>
 
-          <a
-            href="accountpage.html"
-            class="text-decoration-none pt-2 px-2"
-            id="account-button"
+          <a href="accountpage.html" class="nav-button" id="account-button"
             ><img
               src="images/icons/account-icon.png"
               alt="account"
@@ -106,7 +94,7 @@
 
       <!-- Search -->
       <div
-        class="container row align-items-center mx-auto bg-div search-section"
+        class="container row align-items-center mx-auto search-section bg-four border-shadow"
       >
         <div
           class="col-12 col-md-4 logo-container justify-content-center d-flex"
@@ -152,10 +140,10 @@
               <div id="filtermain1" class="accordion-collapse collapse">
                 <div class="accordion-body">
                   <div class="row d-flex justify-content-center">
-                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4 px-0">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button filter-accordion"
+                          class="accordion-button collapsed filter-accordion"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#filtercat1"
@@ -191,10 +179,10 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4 px-0">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button filter-accordion"
+                          class="accordion-button collapsed filter-accordion"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#filtercat2"
@@ -230,10 +218,10 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4 px-0">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button filter-accordion"
+                          class="accordion-button collapsed filter-accordion"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#filtercat3"
@@ -269,10 +257,10 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4 px-0">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button filter-accordion"
+                          class="accordion-button collapsed filter-accordion"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#filtercat4"
@@ -308,10 +296,10 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4 px-0">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button filter-accordion"
+                          class="accordion-button collapsed filter-accordion"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#filtercat5"
@@ -347,10 +335,10 @@
                       </div>
                     </div>
 
-                    <div class="accordion-item col-12 col-sm-6 col-lg-4">
+                    <div class="accordion-item col-12 col-sm-6 col-lg-4 px-0">
                       <h2 class="accordion-header">
                         <button
-                          class="accordion-button filter-accordion"
+                          class="accordion-button collapsed filter-accordion"
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#filtercat6"
@@ -392,7 +380,7 @@
     </header>
 
     <main>
-      <section class="container bg-div mb-5">
+      <section class="container bg-three mb-5 border-shadow">
         <h1>Cart</h1>
         <hr />
         <div class="row mb-4">
@@ -418,7 +406,7 @@
         <div class="d-flex justify-content-end">
           <button
             href=""
-            class="btn btn-grey text-right"
+            class="btn-darkgrey btn-lg border-shadow-hover text-right"
             data-bs-toggle="modal"
             data-bs-target="#cartModal"
           >
@@ -484,44 +472,54 @@
           <h5>Contacts</h5>
           <div>
             Smart:
-            <a href="tel:+" class="text-decoration-none text-darkblue"
+            <a
+              href="tel:+"
+              class="text-decoration-none text-darkblue quick-links"
               >+00000000</a
             >
           </div>
           <div>
             Globe:
-            <a href="tel:+" class="text-decoration-none text-darkblue"
+            <a
+              href="tel:+"
+              class="text-decoration-none text-darkblue quick-links"
               >+00000001</a
             >
           </div>
           <div>
             Tel:
-            <a href="tel:+" class="text-decoration-none text-darkblue"
+            <a
+              href="tel:+"
+              class="text-decoration-none text-darkblue quick-links"
               >+00000002</a
             >
           </div>
           <div>
-            <a href="#" class="text-decoration-none text-darkblue">Location</a>
+            <a href="#" class="text-decoration-none text-darkblue quick-links"
+              >Philippines</a
+            >
           </div>
         </div>
         <div class="col-12 col-sm-3 mt-3">
           <h5>Quick links</h5>
           <a
-            href="costumersupport.html#about"
-            class="d-block text-decoration-none text-darkblue"
+            href="about.html#about"
+            class="d-block text-decoration-none text-darkblue quick-links"
             >About</a
           >
           <a
-            href="costumersupport.html#privacypolicy"
-            class="d-block text-decoration-none text-darkblue"
+            href="about.html#privacypolicy"
+            class="d-block text-decoration-none text-darkblue quick-links"
             >Privacy Policy</a
           >
-          <a href="" class="d-block text-decoration-none text-darkblue"
+          <a
+            href=""
+            class="d-block text-decoration-none text-darkblue quick-links"
             >Track Order</a
           >
           <a
-            href="costumersupport.html#returnpolicy"
-            class="d-block text-decoration-none text-darkblue"
+            href="about.html#returnpolicy"
+            class="d-block text-decoration-none text-darkblue quick-links"
             >Return Policy</a
           >
         </div>
@@ -574,9 +572,9 @@
           <a
             href="logInSignUp.html"
             type="button"
-            class="btn-darkblue border-shadow-hover text-decoration-none btn-lg mx-auto mt-2 notif-button"
+            class="border-shadow-hover text-decoration-none btn-lg mx-auto mt-2 btn-darkblue"
           >
-            <small> Turn On Notifications</small>
+            Turn On Notifications
           </a>
         </div>
       </section>
