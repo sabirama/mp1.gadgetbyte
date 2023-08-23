@@ -257,7 +257,6 @@ footer {
     rgba(251, 251, 251, 1) 100%
   );
   background-color: none;
-  padding: 2rem;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #c0c0c0, 4px 4px 8px #36454f;
 }
