@@ -53,13 +53,16 @@
             </button>
 
             <button type="button" class="btn">
-              <a href="logInSignUp.html" class="text-decoration-none">
+              <a onclick="toggle()" class="text-decoration-none">
                 Log-in / Sign-Up
               </a>
             </button>
           </div>
 
-          <a href="accountpage.html" class="text-decoration-none pt-2 px-2"
+          <a
+            href="accountpage.html"
+            class="text-decoration-none pt-2 px-2 inactive"
+            id="account-button"
             ><img
               src="images/icons/account-icon.png"
               alt="account"
@@ -85,9 +88,7 @@
               </li>
               <li><a class="dropdown-item" href="#">Track Orders</a></li>
               <li>
-                <a class="dropdown-item" href="logInSignUp.html"
-                  >Log-in / Sign-Up</a
-                >
+                <a class="dropdown-item" onclick="toggle()">Log-in / Sign-Up</a>
               </li>
             </ul>
           </div>
@@ -426,13 +427,20 @@
           <input type="checkbox" id="remembercheckbox" />
           <label for="remembercheckbox"> Keep me logged in.</label>
         </div>
+        <div class="container">
+          <a href="#" class="text-decoration-none text-charcoal text-enlarge"
+            >Forgot Password?</a
+          >
+        </div>
 
         <div class="d-flex">
-          <input
+          <a
             type="button"
-            value="Log-In"
-            class="btn-darkgrey border-shadow-hover btn-lg m-auto mb-3"
-          />
+            class="btn-darkgrey border-shadow-hover text-center text-decoration-none mb-2 mx-auto py-3 col-12 col-md-5"
+            href="index.html"
+          >
+            Log-in
+          </a>
         </div>
         <h4 class="text-center">Or</h4>
 
@@ -440,6 +448,8 @@
           <a
             type="button"
             class="btn-darkgrey border-shadow-hover text-center text-decoration-none mb-2 mx-auto py-2 col-12 col-md-5"
+            data-bs-toggle="modal"
+            data-bs-target="#logInModal"
           >
             Log-in with<span class="text-lightblue"> Facebook</span>
           </a>
@@ -447,6 +457,8 @@
           <a
             type="button"
             class="btn-darkgrey border-shadow-hover text-center text-decoration-none mb-2 mx-auto py-2 col-12 col-md-5"
+            data-bs-toggle="modal"
+            data-bs-target="#logInModal"
           >
             Log-in with <span class="text-green">Google</span>
           </a>
@@ -516,11 +528,13 @@
         </div>
 
         <div class="d-flex">
-          <input
+          <a
             type="button"
-            value="Sign-up"
-            class="btn-darkgrey border-shadow-hover btn-lg m-auto mb-2"
-          />
+            class="btn-darkgrey border-shadow-hover text-center text-decoration-none mb-2 mx-auto py-3 col-12 col-md-5"
+            href="index.html"
+          >
+            Sign-Up
+          </a>
         </div>
         <h4 class="text-center">Or</h4>
 
@@ -528,6 +542,8 @@
           <a
             type="button"
             class="btn-darkgrey border-shadow-hover text-center text-decoration-none mb-2 mx-auto py-2 col-12 col-md-5"
+            data-bs-toggle="modal"
+            data-bs-target="#signUpModal"
           >
             Sign-up with<span class="text-lightblue"> Facebook</span>
           </a>
@@ -535,6 +551,8 @@
           <a
             type="button"
             class="btn-darkgrey border-shadow-hover text-center text-decoration-none mb-2 mx-auto py-2 col-12 col-md-5"
+            data-bs-toggle="modal"
+            data-bs-target="#signUpModal"
           >
             Sign-up with <span class="text-green">Google</span>
           </a>
@@ -546,6 +564,80 @@
           </p>
         </div>
       </section>
+
+      <!-- log-in-modal -->
+
+      <div
+        class="modal fade"
+        id="logInModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Third Party Log-In
+              </h5>
+            </div>
+            <div class="modal-body">Log-In with third party account.</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn-darkblue btn-lg"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <a
+                href="index.html"
+                type="button"
+                class="btn-grey btn-lg text-decoration-none"
+              >
+                Log-In
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sign-up-modal -->
+      <div
+        class="modal fade"
+        id="signUpModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Third Party Sign-Up
+              </h5>
+            </div>
+            <div class="modal-body">Sign-Up with third party account.</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn-darkblue btn-lg"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <a
+                href="index.html"
+                type="button"
+                class="btn-grey btn-lg text-decoration-none"
+              >
+                Sign-Up
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="d-flex flex-column">

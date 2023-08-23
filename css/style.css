@@ -216,6 +216,9 @@ footer {
 .text-charcoal {
   color: #36454f;
 }
+.text-enlarge:hover {
+  font-size: 120%;
+}
 .bg-div {
   background: radial-gradient(
     circle,
