@@ -94,6 +94,9 @@ main {
   display: flex;
   justify-content: end;
 }
+.search-section {
+  margin-top: 6rem;
+}
 
 #main-search-bar {
   height: 2rem;
