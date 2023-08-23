@@ -42,10 +42,6 @@ body {
   z-index: 2;
 }
 
-.search-section {
-  margin-top: 100px;
-}
-
 #brand-logo {
   height: 120px;
   width: auto;
@@ -242,6 +238,14 @@ footer {
   background-color: rgba(207, 226, 255, 1);
 }
 
+@media screen {
+  .search-section {
+    margin-top: 100px;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+}
+
 @media screen and (min-width: 574px) {
   body {
     max-width: 1920px;
@@ -307,7 +311,11 @@ footer {
   }
 
   .search-section {
-    margin-top: 145px;
+    margin-top: 140px;
+    padding-top: 0;
+  }
+  .message-us-container {
+    display: flex;
   }
 
   .item-description {
