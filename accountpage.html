@@ -404,16 +404,21 @@
     <main>
       <section class="col-xs-12 col-md-8 m-auto bg-div mb-5">
         <div class="container">
-          <h4 class="px-3 pt-5">
-            Account Name
-            <span>
+          
+          <div class="px-3 pt-5">
+            <div class="d-flex">
+              <img src="images/icons/account-icon.png" alt="user" id="account-logo-image">
+            <h4 class="align-self-end mb-0 px-1"> Account Name 
+            </h4>
+            <span class="align-self-end">
                 <input
                   type="button"
                   value="edit"
                   class="btn-grey" />
-  
+            </span>
+            </div>
             <hr>
-          </span>
+            
             <div class="px-3">
               <p class="px-3 pt-3">Full Name: FirstName LastName <span
                   ><input type="button" value="edit" class="btn-grey"
@@ -433,21 +438,23 @@
               </p>
             </div>
             <hr />
-          </h4>
+          </div>
           <h4 class="px-3 pt-3">Ongoing Orders</h4>
           <div class="row">
-            <div class="col-12 px-5">
+            <div class="col-12 px-5 pb-2">
               Order Item 1 name
-              <img src="images/icons/promo.png" alt="" class="icon" />
+              
               <span>| Arrival date |</span>
               <span>Item Details</span>
+              <input type="button" value="view item" class="btn-grey"/>
             </div>
 
-            <div class="col-12 px-5">
+            <div class="col-12 px-5 pb-2">
               Order Item 2 name
-              <img src="images/icons/promo.png" alt="" class="icon" />
+              
               <span>| Arrival date |</span>
               <span>Item Details</span>
+              <input type="button" value="view item" class="btn-grey"/>
             </div>
           </div>
           <hr />
@@ -456,26 +463,24 @@
             <div class="col-12 px-5 py-2">
               Address 1: Bldg No. Street, City, Region <span>+0000000</span><span class="px-2"><input type="button" value="remove" class="btn-grey"></span>
             </div>
-            <div class="col-12 px-5 py-2">
-              Address 2: Bldg No. Street, City, Region <span>+0000000</span><span class="px-2"><input type="button" value="remove" class="btn-grey"></span>
-            </div>
+
             <div class="col-12 px-5 py-2"><span class="px-2"><input type="button" value="Add Shipping Address" class="btn-grey"></span></div>
             <hr />
           </div>
           <h4 class="px-3 pt-3">Order History</h4>
           <div class="row">
-            <div class="col-12 px-5">
-              Order Item 1 name
-              <img src="images/icons/promo.png" alt="" class="icon" />
+            <div class="col-12 px-5 pb-2">
+              Order Item 1 name            
               <span>| Arrival date |</span>
               <span>Item Details</span>
+              <input type="button" value="view item" class="btn-grey"/>
             </div>
 
-            <div class="col-12 px-5">
+            <div class="col-12 px-5 pb-2">
               Order Item 2 name
-              <img src="images/icons/promo.png" alt="" class="icon" />
               <span>| Arrival date |</span>
               <span>Item Details</span>
+              <input type="button" value="view item" class="btn-grey"/>
             </div>
           </div>
         </div>
@@ -511,7 +516,7 @@
         </div>
         <div class="col-12 col-sm-3 mt-3">
           <h5>Support</h5>
-          <a href="" class="d-block text-decoration-none text-darkblue"
+          <a href="costumersupport.html#about" class="d-block text-decoration-none text-darkblue"
             >About</a
           >
           <a href="" class="d-block text-decoration-none text-darkblue"

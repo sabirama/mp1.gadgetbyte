@@ -414,23 +414,91 @@
         <h1>Cart</h1>
         <hr />
         <div class="row mb-4">
-          <div class="col-2">
-            <img
-              src="images/icons/promo.png"
-              alt=""
-              class="img-fluid col-12 col-sm-2 cart-img"
-            />
+          <div class="col-2 text-center">
+            <h2>Item</h2>
           </div>
-          <div class="col-12 col-sm-4">Description</div>
-          <div class="col-12 col-sm-2">Quatity</div>
-          <div class="col-12 col-sm-2">Price</div>
-          <div class="col-12 col-sm-2"><input type="checkbox" /></div>
+          <div class="col-12 col-sm-4 my-auto">Description</div>
+          <div class="col-12 col-sm-2 my-auto">Quatity</div>
+          <div class="col-12 col-sm-2 my-auto">Price</div>
+          <div class="col-12 col-sm-2 my-auto"><input type="checkbox" /></div>
+          <hr />
         </div>
-        <hr />
+        <div class="row mb-4">
+          <div class="col-2 text-center">
+            <h2>Item</h2>
+          </div>
+          <div class="col-12 col-sm-4 my-auto">Description</div>
+          <div class="col-12 col-sm-2 my-auto">Quatity</div>
+          <div class="col-12 col-sm-2 my-auto">Price</div>
+          <div class="col-12 col-sm-2 my-auto"><input type="checkbox" /></div>
+          <hr />
+        </div>
         <div class="d-flex justify-content-end">
-          <a href="" class="btn btn-grey text-right"> Check-out</a>
+          <button
+            href=""
+            class="btn btn-grey text-right"
+            data-bs-toggle="modal"
+            data-bs-target="#cartModal"
+          >
+            Buy now
+          </button>
         </div>
       </section>
+
+      <!-- Buy Now Modal -->
+      <div
+        class="modal fade"
+        id="cartModal"
+        tabindex="-1"
+        aria-labelledby="ModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="cartModalLabel">Buy Now</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <hr />
+              <label for="" class="mt-3">Payment Method</label>
+              <div>
+                <input type="radio" name="payment-method" />
+                <label for="">Cash on Delivery |</label>
+                <input type="radio" name="payment-method" />
+                <label for="">G-cash |</label>
+                <input type="radio" name="payment-method" />
+                <label for="">Card </label>
+              </div>
+              <hr />
+              <label for="" class="mt-3">Shipping Address:</label>
+              <p>
+                Shipping Address Placehoder
+                <a href="#" class="text-decoration-none"
+                  >edit shipping address</a
+                >
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-primary">
+                Proceed to Check-out
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="d-flex flex-column">
@@ -462,7 +530,9 @@
         </div>
         <div class="col-12 col-sm-3 mt-3">
           <h5>Support</h5>
-          <a href="" class="d-block text-decoration-none text-darkblue"
+          <a
+            href="costumersupport.html#about"
+            class="d-block text-decoration-none text-darkblue"
             >About</a
           >
           <a href="" class="d-block text-decoration-none text-darkblue"

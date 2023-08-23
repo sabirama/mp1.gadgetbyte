@@ -74,6 +74,8 @@ body {
   border: 2px solid #36454f;
   background-color: #36454f;
   border-radius: 10px;
+  width: 200px;
+  margin: auto;
 }
 
 .message-us a {
@@ -95,8 +97,14 @@ body {
 .filter-accordion {
   padding: 0 0.25rem;
 }
+
 .icon {
   height: 2rem;
+}
+
+#account-logo-image {
+  height: 8rem;
+  border-radius: 100%;
 }
 
 .shop-img-container {
@@ -275,6 +283,10 @@ footer {
   .shop-img-container a {
     height: 100%;
   }
+
+  .message-us {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -330,10 +342,10 @@ footer {
 
 .active {
   display: block;
-  transition: 2000;
+  transition: 2s;
 }
 
 .inactive {
   display: none;
-  transition: 2000;
+  transition: 2s;
 }
