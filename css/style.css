@@ -111,6 +111,12 @@ main {
   margin: 1rem auto 0.25rem;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  outline: black;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .filter-accordion {
   padding: 0 0.25rem;
 }
@@ -156,9 +162,11 @@ main {
   width: auto;
 }
 
-.carousel-item img {
-  height: 200px;
-  width: auto;
+.carousel-link img {
+  display: flex;
+  width: 300px;
+  height: auto;
+  margin: auto;
 }
 
 .log-in-container,
@@ -410,8 +418,8 @@ footer {
   }
 
   .carousel-item img {
-    height: 500px;
-    width: auto;
+    height: auto;
+    width: 500px;
   }
 
   .logo-container a {
@@ -422,7 +430,19 @@ footer {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .carousel-link img {
+    height: 280px;
+    width: 440px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
+  .carousel-link img {
+    height: 370px;
+    width: 530px;
+  }
+
   .shop-img-container {
     height: 330px;
     width: 100%;
